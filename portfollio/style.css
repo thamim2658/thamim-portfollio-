@@ -1,0 +1,90 @@
+.container{
+    margin : 0 autopx;
+    background-color: #986ec0;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background-color:#0f172a;
+}
+.nav-links{
+    display:flex;
+    gap:40px;
+}
+
+nav a{
+    color:#fff;
+    font-size:16px;
+    padding:5px 10px;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:white;
+}
+
+.nav-links a{
+    font-size:16px;
+}
+.nav-links a{
+    position:relative;
+}
+
+
+/* sectin */
+
+
+#about-me{
+    background-color : #986ec0;
+    padding:50px 0;
+    font-size: 20px;
+    font-family: Arial, sans-serif; 
+}
+
+#interest{
+    background-color : #986ec0;
+    padding:50px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: light;
+}
+
+#skill{
+    background-color : #986ec0;
+    padding:50px 0;
+}
+
+#object{
+    background-color : #986ec0;
+    padding:50px 0;
+}
+
+#contact{
+    background-color : #caabe6;
+    padding:50px 0;
+}
