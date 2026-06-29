@@ -4,30 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thamim Ansari - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="bc.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
    <header>
      <nav>
         <div class="logo">TA</div>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
           <ul class="nav-links">
         <li><a href ="#about-me">about</a></li>
+        <li><a href ="#object">career-Objective</a></li>
         <li><a href ="#interest">Interested-skills</a> </li>
         <li><a href="#skill">Skill</a></li>
-        <li><a href ="#object">career-Objective</a></li>
         <li><a href ="#contact">contact</a></li>
         </ul> 
         
      </nav>
    </header>
+   <main>
+    <!-- container section -->
   <div class="container">
+    <!-- hero section -->
     <section id="hero">
+      <article>
       <h1>Welcome to My Portfolio</h1>
       <p>
         I am Thamim Ansari, a passionate Computer Science &amp; Engineering student at Chennai Institute of Technology (CIT).
         I love building scalable software solutions and exploring modern technologies.
-      </p>
+      </p></article> </section>
     <section id="about-me">
+      <article>
     <h1>Hi, I'm Thamim Ansari</h1>
 
     <p>
@@ -55,39 +62,13 @@
       improve problem-solving skills, and understand industry best practices. I am always eager to learn
       new technologies, contribute to meaningful projects, and collaborate with like-minded developers.
     </p>
+    </article>
 </section>
 </section>
 
-<section id="interest">
-    <h2>Areas of Interest</h2>
-
-    <ul>
-      <li>Full Stack Web Development</li>
-      <li>Backend Development</li>
-      <li>Data Structures &amp; Algorithms</li>
-      <li>System Design</li>
-      <li>Linux &amp; Open Source Technologies</li>
-      <li>Database Management Systems</li>
-      <li>REST APIs &amp; Authentication Systems</li>
-      <li>Cloud Computing</li>
-      <li>Artificial Intelligence &amp; Machine Learning</li>
-      <li>Software Engineering</li>
-    </ul>
-</section>  
-<section id="skill">
-    <h2>Technical Skills</h2>
-
-    <ul>
-      <li>Languages: C, C++, JavaScript, Python</li>
-      <li>Frontend: HTML, CSS, JavaScript, React.js</li>
-      <li>Backend: Node.js, Express.js</li>
-      <li>Databases: MongoDB, MySQL</li>
-      <li>Tools: Git, GitHub, VS Code, Linux</li>
-      <li>Concepts: OOP, DBMS, Operating Systems, Computer Networks</li>
-    </ul>
-</section>
-
+<!-- career objective section -->
 <section id="object" >
+  <article>
     <h2>Career Objective</h2>
 
     <p>
@@ -101,30 +82,78 @@
       technology industry. Every challenge I solve and every project I build brings me one step closer to becoming
       a skilled software engineer capable of creating meaningful solutions for the future.
     </p>
+    </article>
 </section>
+
+<!-- interest section -->
+<section id="interest">
+  <article >
+      <h2>Areas of Interest</h2>
+
+    <ul>
+      <li>Full Stack Web Development</li>
+      <li>Backend Development</li>
+      <li>Data Structures &amp; Algorithms</li>
+      <li>System Design</li>
+      <li>Linux &amp; Open Source Technologies</li>
+      <li>Database Management Systems</li>
+      <li>REST APIs &amp; Authentication Systems</li>
+      <li>Cloud Computing</li>
+      <li>Artificial Intelligence &amp; Machine Learning</li>
+      <li>Software Engineering</li>
+    </ul>
+    </article>
+</section>  
+
+<!-- skill section -->
+<section id="skill">
+  <article>
+    <h2>Technical Skills</h2>
+
+    <ul>
+      <li>Languages: C, C++, JavaScript, Python</li>
+      <li>Frontend: HTML, CSS, JavaScript, React.js</li>
+      <li>Backend: Node.js, Express.js</li>
+      <li>Databases: MongoDB, MySQL</li>
+      <li>Tools: Git, GitHub, VS Code, Linux</li>
+      <li>Core Concepts: OOP, DBMS, Operating Systems, Computer Networks</li>
+    </ul>
+    </article>
+</section>
+
+<!-- contact section -->
  <h1>Contact Me</h1>
 <section id="contact">
    <form action="#" method="post" autocomplete="on">
+    <div>
      <label for="username">username : </label>
      <input type = "text" name ="username" id ="username" placeholder="john Doe" required>
-     <br>
+     </div>
+      <div>
       <label for="email">email : </label>
       <input type="email" id="email" name ="email" placeholder="abc@gmail.com" required>
-        <br>
+        </div>  
+        <div>
      <label for="password">password :</label>
      <input type ="password" id ="password" name="password">
-      <br>
+      </div>
+      <div>
      <label for="phone"> Phone Number : </label>
      <input type="number" id ="phone" name = "phone" placeholder="9897979xxx" required>
-    <br>
+    </div>
+
+    <div>
      <label for="DOB">Date Of Birth : </label>
      <input type ="date" id="DOB" name="DOB" placeholder="26/05/2008">
-      <br>
+      </div>
+      
     <div id ="btn-login">
       <button type="submit" >create Account</button>
     </div>
    </form>
 </section>
   </div>
+</main>
+
 </body>
 </html>
