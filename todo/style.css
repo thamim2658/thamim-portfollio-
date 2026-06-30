@@ -1,0 +1,310 @@
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===================================
+   VARIABLES
+=================================== */
+
+:root{
+
+    --primary:#2563eb;
+    --primary-hover:#1d4ed8;
+
+    --danger:#ef4444;
+    --danger-hover:#dc2626;
+
+    --background:#f3f4f6;
+    --card:#ffffff;
+
+    --text:#1f2937;
+    --text-light:#6b7280;
+
+    --border:#d1d5db;
+
+    --radius:12px;
+
+    --shadow:
+        0 10px 25px rgba(0,0,0,.08);
+}
+
+/* ===================================
+   BODY
+=================================== */
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:var(--background);
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:50px 20px;
+}
+
+/* ===================================
+   MAIN CONTAINER
+=================================== */
+
+.container{
+
+    width:100%;
+
+    max-width:700px;
+
+    background:var(--card);
+
+    padding:35px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+}
+
+/* ===================================
+   TITLE
+=================================== */
+
+.container h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:var(--text);
+
+    letter-spacing:1px;
+}
+
+/* ===================================
+   INPUT SECTION
+=================================== */
+
+.input-con{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:30px;
+}
+
+/* ===================================
+   INPUT
+=================================== */
+
+#input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+#input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+/* ===================================
+   BUTTON
+=================================== */
+
+#add-btn{
+
+    padding:15px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+}
+
+#add-btn:hover{
+
+    background:var(--primary-hover);
+}
+
+/* ===================================
+   TASK CONTAINER
+=================================== */
+
+#task-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+/* ===================================
+   TASK CARD
+=================================== */
+
+.task{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:10px;
+
+    border:1px solid var(--border);
+
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+
+    transition:.25s;
+}
+
+.task:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.10);
+}
+
+/* ===================================
+   TASK TITLE
+=================================== */
+
+.task-title{
+
+    flex:1;
+
+    font-size:17px;
+
+    color:var(--text);
+
+    word-break:break-word;
+}
+
+/* ===================================
+   BUTTON GROUP
+=================================== */
+
+.task-actions{
+
+    display:flex;
+
+    gap:10px;
+}
+
+/* ===================================
+   DELETE BUTTON
+=================================== */
+
+.delete-btn{
+
+    border:none;
+
+    background:var(--danger);
+
+    color:white;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.delete-btn:hover{
+
+    background:var(--danger-hover);
+}
+
+/* ===================================
+   EMPTY STATE
+=================================== */
+
+.empty{
+
+    text-align:center;
+
+    padding:35px;
+
+    border:2px dashed var(--border);
+
+    border-radius:10px;
+
+    color:var(--text-light);
+
+    font-size:17px;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:600px){
+
+    .container{
+
+        padding:20px;
+    }
+
+    .input-con{
+
+        flex-direction:column;
+    }
+
+    #add-btn{
+
+        width:100%;
+    }
+
+    .task{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+    }
+
+    .task-actions{
+
+        width:100%;
+
+        justify-content:flex-end;
+    }
+
+}
